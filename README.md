@@ -10,10 +10,16 @@
 
 1. Установите зависимости:
 ```bash
-pip install git+https://github.com/openai/whisper.git
+pip install -r requirements.txt
 ```
 
-*(Также потребуется ffmpeg. Убедитесь, что он установлен и добавлен в PATH.)*
+В `requirements.txt` входят:
+- `whisper` — библиотека OpenAI для распознавания речи,
+- `torch` — необходим для работы whisper,
+- `ffmpeg-python` — обёртка над ffmpeg, для поддержки разных аудиоформатов.
+
+> ⚠️ Убедитесь, что `ffmpeg` установлен в системе и доступен в PATH.  
+> Скачать можно с [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)
 
 2. Запустите скрипт:
 ```bash
